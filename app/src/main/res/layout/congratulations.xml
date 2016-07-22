@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/game_back"
+    android:weightSum="1">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:stretchColumns="*"
+        android:padding="5dip"
+        >
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Oops! You are done"
+                android:id="@+id/textView3"
+                android:textColor="@color/background2"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:layout_weight="0.85" />
+        </TableRow>
+        <TableRow
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Your score is"
+                android:id="@+id/textView4"
+                android:gravity="center"
+                android:textColor="@color/colorTitle"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="50sp"
+                android:padding="10sp"
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:id="@+id/textViewScore"
+                android:textColor="@color/colorTitle"
+                android:background="@color/colorAccent"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:padding="5sp"
+
+                />
+        </TableRow>
+        <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="You finished the equation in"
+                    android:id="@+id/finishTime"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_blue_dark"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:padding="5sp"
+
+                    />
+            </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:id="@+id/textViewTime"
+                android:textColor="@color/colorTitle"
+                android:background="@android:color/holo_green_dark"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:padding="5sp"
+
+                />
+        </TableRow>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save score"
+            android:id="@+id/saveButton"
+            android:textSize="20sp"
+            android:padding="5sp"
+            android:layout_marginTop="50sp"
+            android:layout_gravity="bottom" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restart Game"
+            android:id="@+id/restart"
+            android:layout_gravity="bottom" />
+
+    </TableLayout>
+
+
+
+</LinearLayout>

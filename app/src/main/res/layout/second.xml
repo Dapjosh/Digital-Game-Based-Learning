@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/game_back"
+    android:padding="15sp">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="You have a mission of filling sudoku grids with numbers,each solution for x in the equation must be correct as these would serve as givens for the sudoku puzzle. Enjoy!Time is ticking."
+            android:id="@+id/textView2"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorTitle"
+            android:textIsSelectable="false"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60sp"
+            android:text="Next"
+            android:id="@+id/next_button"
+            android:layout_gravity="bottom|right"
+            android:background="@color/colorTitle"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp"
+            android:padding="20sp" />
+        </LinearLayout>
+
+</LinearLayout>
+

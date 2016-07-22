@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="30dip"
+    android:orientation="horizontal"
+    android:background="@mipmap/bg_image">
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--tools:context="com.example.oladapo.sudoku.MainActivity"-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center" >
+        <TextView
+            android:text="@string/main_title"
+            android:color="@color/colorTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dip"
+            android:textSize="50sp"
+            android:textColor="@color/background_material_light" />
+        <TextView
+            android:text="If you are new here please click the register button below and just start if not new."
+            android:color="@color/colorTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dip"
+            android:textSize="20sp"
+            android:textColor="@color/background_material_light" />
+        <GridLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center" >
+            <Button
+                android:id="@+id/start_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/start_label"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/accent_material_light"
+                android:textColor="@color/abc_primary_text_disable_only_material_dark"
+                android:padding="10sp" />
+
+        </GridLayout>
+
+    </LinearLayout>
+</LinearLayout>

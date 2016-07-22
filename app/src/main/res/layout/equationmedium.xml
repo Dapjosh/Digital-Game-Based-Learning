@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TableLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:stretchColumns="*"
+            android:padding="5dip">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:max="90"
+                    android:minHeight="50dp"
+                    android:minWidth="200dp"
+                    android:progress="0"
+                    android:layout_gravity="end|left" />
+
+                <TextView
+                    android:id="@+id/textViewTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="60sp" />
+                <Button
+                    android:id="@+id/buttonHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show help"
+                    android:textSize="30sp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Solve For x in these equations"
+                android:id="@+id/textView"
+                android:gravity="center"
+                android:textSize="30sp" />
+            <TableRow
+                android:paddingBottom="10dip"
+                android:paddingStart="10dip">
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="10"
+
+                    android:id="@+id/variable_a_1"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/colorAccent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="x"
+                    android:id="@+id/constant_1"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorTitle"/>
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="+"
+                    android:id="@+id/operator_1"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_red_light"/>
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="2"
+
+                    android:id="@+id/variable_b_1"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_orange_dark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="="
+                    android:id="@+id/equals_1"
+                    android:padding="5dip"
+                    android:gravity="center" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="22"
+
+                    android:id="@+id/variable_c_1"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/puzzle_selected"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text=""
+                    android:inputType="number"
+                    android:id="@+id/answer_1"
+                    android:padding="5dip"
+                    android:layout_marginStart="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_purple"/>
+            </TableRow>
+            <TableRow
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip">
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="3"
+
+                    android:id="@+id/variable_a_2"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/colorAccent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="x"
+                    android:id="@+id/constant2"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorTitle" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="-"
+                    android:id="@+id/operator_2"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_red_light"
+                    />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="2"
+
+                    android:id="@+id/variable_b_2"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_orange_dark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="="
+                    android:id="@+id/equals_2"
+                    android:padding="5dip"
+                    android:gravity="center" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="7"
+
+                    android:id="@+id/variable_c_2"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/puzzle_selected"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text=""
+                    android:id="@+id/answer_2"
+                    android:inputType="number"
+                    android:padding="5dip"
+                    android:layout_marginStart="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_purple"/>
+            </TableRow>
+            <TableRow
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip">
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="9"
+
+                    android:id="@+id/variable_a_3"
+                    android:padding="5dip"
+                    android:gravity="center"
+
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/colorAccent"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="x"
+                    android:id="@+id/constant3"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorTitle"
+                    />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="-"
+                    android:id="@+id/operator_3"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_red_light"
+                    />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="5"
+
+                    android:id="@+id/variable_b_3"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_orange_dark" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="="
+                    android:id="@+id/equals_3"
+                    android:padding="5dip"
+                    android:gravity="center" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="40"
+
+                    android:id="@+id/variable_c_3"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/puzzle_selected"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text=""
+                    android:inputType="number"
+                    android:id="@+id/answer_3"
+                    android:padding="5dip"
+                    android:layout_marginStart="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_purple"/>
+            </TableRow>
+            <TableRow
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip">
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="20"
+
+                    android:id="@+id/variable_a_4"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/colorAccent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="x"
+                    android:id="@+id/constant4"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorTitle"
+                    />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="-"
+                    android:id="@+id/operator_4"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_red_light"/>
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="2"
+
+                    android:id="@+id/variable_b_4"
+                    android:padding="5dip"
+                    android:gravity="center"
+
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_orange_dark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="="
+                    android:id="@+id/equals_4"
+                    android:padding="5dip"
+                    android:gravity="center" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="18"
+
+                    android:id="@+id/variable_c_4"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:scrollIndicators="right"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/puzzle_selected" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text=""
+                    android:inputType="number"
+                    android:id="@+id/answer_4"
+                    android:padding="5dip"
+                    android:layout_marginStart="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_purple"/>
+            </TableRow>
+            <TableRow
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip">
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="9"
+
+                    android:id="@+id/variable_a_5"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/colorAccent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="x"
+                    android:id="@+id/constant5"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorTitle" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="+"
+                    android:id="@+id/operator_5"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_red_light" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="8"
+
+                    android:id="@+id/variable_b_5"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_orange_dark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="="
+                    android:id="@+id/equals_5"
+                    android:padding="5dip"
+                    android:gravity="center" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="62"
+
+                    android:id="@+id/variable_c_5"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/puzzle_selected" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text=""
+                    android:inputType="number"
+                    android:id="@+id/answer_5"
+                    android:padding="5dip"
+                    android:layout_marginStart="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_purple"/>
+            </TableRow>
+            <TableRow
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip">
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="12"
+
+                    android:id="@+id/variable_a_6"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/colorAccent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="x"
+                    android:id="@+id/constant6"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorTitle" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="+"
+                    android:id="@+id/operator_6"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_red_light" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="6"
+
+                    android:id="@+id/variable_b_6"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_orange_dark" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="="
+                    android:id="@+id/equals_6"
+                    android:padding="5dip"
+                    android:gravity="center" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="42"
+
+                    android:id="@+id/variable_c_6"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/puzzle_selected" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:inputType="number"
+                    android:id="@+id/answer_6"
+                    android:padding="5dip"
+                    android:layout_marginStart="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_purple"/>
+            </TableRow>
+            <TableRow
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip">
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="21"
+
+                    android:id="@+id/variable_a_7"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/colorAccent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="x"
+                    android:id="@+id/constant7"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorTitle" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="+"
+                    android:id="@+id/operator_7"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_red_light" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="8"
+
+                    android:id="@+id/variable_b_7"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_orange_dark" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="="
+                    android:id="@+id/equals_7"
+                    android:padding="5dip"
+                    android:gravity="center" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="133"
+
+                    android:id="@+id/variable_c_7"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/puzzle_selected" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text=""
+                    android:inputType="number"
+                    android:id="@+id/answer_7"
+                    android:padding="5dip"
+                    android:layout_marginStart="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_purple" />
+            </TableRow>
+            <TableRow
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip">
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="2"
+
+                    android:id="@+id/variable_a_8"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/colorAccent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="x"
+                    android:id="@+id/constant8"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorTitle" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="+"
+                    android:id="@+id/operator_8"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_red_light" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="6"
+
+                    android:id="@+id/variable_b_8"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_orange_dark" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="="
+                    android:id="@+id/equals_8"
+                    android:padding="5dip"
+                    android:gravity="center" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="12"
+
+                    android:id="@+id/variable_c_8"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/puzzle_selected" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text=""
+                    android:inputType="number"
+                    android:id="@+id/answer_8"
+                    android:padding="5dip"
+                    android:layout_marginStart="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_purple"/>
+            </TableRow>
+            <TableRow                 android:paddingBottom="10dip"                 android:paddingLeft="10dip">
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="12"
+
+                    android:id="@+id/variable_a_9"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/colorAccent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="x"
+                    android:id="@+id/constant9"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorTitle" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="-"
+                    android:id="@+id/operator_9"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_red_light" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="6"
+
+                    android:id="@+id/variable_b_9"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_orange_dark" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="="
+                    android:id="@+id/equals_9"
+                    android:padding="5dip"
+                    android:gravity="center" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="66"
+
+                    android:id="@+id/variable_c_9"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/puzzle_selected" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text=""
+                    android:inputType="number"
+                    android:id="@+id/answer_9"
+                    android:padding="5dip"
+                    android:layout_marginStart="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_purple"/>
+            </TableRow>
+            <TableRow                 android:paddingBottom="10dip"                 android:paddingLeft="10dip">
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="11"
+
+                    android:id="@+id/variable_a_10"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/colorAccent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="x"
+                    android:id="@+id/constant10"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorTitle"/>
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="+"
+                    android:id="@+id/operator_10"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_red_light" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="8"
+
+                    android:id="@+id/variable_b_10"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_orange_dark" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="="
+                    android:id="@+id/equals_10"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="52"
+
+                    android:id="@+id/variable_c_10"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/puzzle_selected" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text=""
+                    android:inputType="number"
+                    android:id="@+id/answer_10"
+                    android:padding="5dip"
+                    android:layout_marginStart="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_purple"/>
+            </TableRow>
+            <TableRow                 android:paddingBottom="10dip"                 android:paddingLeft="10dip">
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="3"
+
+                    android:id="@+id/variable_a_11"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/colorAccent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="x"
+                    android:id="@+id/constant11"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorTitle" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="-"
+                    android:id="@+id/operator_11"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_red_light" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="1"
+
+                    android:id="@+id/variable_b_11"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_orange_dark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="="
+                    android:id="@+id/equals_11"
+                    android:padding="5dip"
+                    android:gravity="center" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="2"
+
+                    android:id="@+id/variable_c_11"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/puzzle_selected" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text=""
+                    android:inputType="number"
+                    android:id="@+id/answer_11"
+                    android:padding="5dip"
+                    android:layout_marginStart="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_purple"/>
+            </TableRow>
+            <TableRow       android:paddingBottom="10dip"                 android:paddingLeft="10dip">
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="12"
+
+                    android:id="@+id/variable_a_12"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/colorAccent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="x"
+                    android:id="@+id/constant12"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorTitle" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="-"
+                    android:id="@+id/operator_12"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_red_light" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="4"
+
+                    android:id="@+id/variable_b_12"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_orange_dark"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="="
+                    android:id="@+id/equals_12"
+                    android:padding="5dip"
+                    android:gravity="center" />
+                <EditText android:inputType="number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text="8"
+
+                    android:id="@+id/variable_c_12"
+                    android:padding="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@color/puzzle_selected" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceSmall"  android:textSize="30sp"
+                    android:text=""
+                    android:inputType="number"
+                    android:id="@+id/answer_12"
+                    android:padding="5dip"
+                    android:layout_marginStart="5dip"
+                    android:gravity="center"
+                    android:textColor="@color/colorTitle"
+                    android:background="@android:color/holo_purple"/>
+            </TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finish stage"
+                android:id="@+id/button"
+                android:layout_column="9"
+                android:layout_gravity="bottom"
+                android:background="@android:color/holo_orange_dark"
+                android:textColor="@color/colorTitle"
+                android:textSize="40sp" />
+        </TableLayout>
+</ScrollView>

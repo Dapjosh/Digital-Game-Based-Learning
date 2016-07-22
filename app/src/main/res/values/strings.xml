@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Sudoku</string>
+    <string name="main_title">SudoBra</string>
+    <string name="continue_label">Continue</string>
+    <string name="new_game_label">New Game</string>
+    <string name="about_label">About</string>
+    <string name="exit_label">Exit</string>
+    <string name="start_label">Start Game</string>
+    <string name="about_text">\
+        SudoBra is a game that integrates sudoku puzzle with mathematics implemented as part of a digital game based learning
+        research project. The game is grouped into three levels where the first level(easy) provides just a 4 x 4 sudoku grid with lesser questions, the
+        second level(medium) provides a 8 x 8 grid with less questions than the first and the third(difficult) sets more question with a 9 x 9 grid.
+        <i>Enjoy!</i>
+    </string>
+    <string name="help_text">
+        In the equation you are required to solve for x. The equation is in the form ax+b=c or ax-b=c, In solving equations with
+        + sign you move the b to the c making it c-b and then divide your answer by a and that gives your solution. In an equation with the negative operation,
+        you move b to c and this makes it to be c + b, then divide your answer by a to arrive at the required solution.
+    </string>
+    <string name="about_title">About SudoBra</string>
+<string name="settings_label">Settings...</string>
+<string name="settings_title">SudoBra settings</string>
+<string name="settings_shortcut">s</string>
+<string name="music_title">Music</string>
+<string name="music_summary">Play background music</string>
+<string name="hints_title">Hints</string>
+<string name="hints_summary">Show hints during play</string>
+    <string name="new_game_title">Difficulty</string>
+    <string name="easy_label">Easy</string>
+    <string name="medium_label">Medium</string>
+    <string name="hard_label">Hard</string>
+    <string name="game_title">Game</string>
+<string name="no_moves_label">No moves</string>
+<string name="keypad_title">Keypad</string>
+    <string name="final_score"></string>
+</resources>
